@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Holy cow, I'm totally going so fast!</title>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<link rel='stylesheet' href="main.css">
+</head>
+
+
+<body>
+
+
+<center>
+
+
+	<div class='container'>
+		<img class='img-responsive'src="http://i239.photobucket.com/albums/ff67/Craig_WM/pokemononlinelogosml.png">
+	</div>
+	<div class='container'>
+		<div class='jumbotron'>
+			<h1 class='texty'>Welcome to the Pokemon Battle Simulator!</h1>
+			<h3 class='texty'>Click the button to build your team!</h3>
+			<div id='reset_button'>
+				<button class='btn btn-danger' role='button'>A Wild Pokemon Appeared!</button>
+			</div>
+		</div>
+		<div id='sprites'>
+		</div>
+		<div>
+			<h2 class='texty'>Your team consists of:</h2>
+			<h2><div id='PokeName'></div></h2>
+		</div>
+	</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Hang on there, skipper!</h4>
+      </div>
+      <div class="modal-body">
+        Do you really wish to reset your team?  YOU CAN'T UNDO THIS, AND WILL HAVE TO LIVE WITH YOUR DECISION FOR THE REST OF YOUR DAYS...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">No way, Jose!</button>
+        <button type="button" class="btn btn-primary" id="hella_reset" data-dismiss="modal">Yes I do!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+	<p id='copyright'>&copy; 2015 Drewsoft, Inc.</p>
+	<script src='pokescript.js'></script>
+</footer>
+</body>
+</html>
